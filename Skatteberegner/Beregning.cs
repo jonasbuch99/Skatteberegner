@@ -15,7 +15,7 @@ namespace Skatteberegner
             //Overstirger det samlede beloeb 1200 kr skal alt beskattes
             if (tingsgaveVaerdi + julegaveVaerdi > 1200)
             {
-                //Selvom det samlede beløb overstiger 1200 bliver julegaven ikke beskattet hvis dem koster 900 eller under.
+                //Selvom det samlede beløb overstiger 1200 bliver julegaven ikke beskattet hvis dem koster 900 eller under
                 if (julegaveVaerdi <= 900)
                 {
                     beskatning = tingsgaveVaerdi;
