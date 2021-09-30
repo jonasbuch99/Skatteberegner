@@ -11,7 +11,6 @@ namespace Skatteberegner
         // Funktionen returnerer det beløb, der skal beskattes (altså ikke selve skatten).
         public double SkatVedJulegave(double julegaveVaerdi, double tingsgaveVaerdi)
         {
-            double beskatningsgradiProcent = 40;
             double beskatning = 0;
             //Overstirger det samlede beloeb 1200 kr skal alt beskattes
             if (tingsgaveVaerdi + julegaveVaerdi > 1200)
@@ -19,11 +18,11 @@ namespace Skatteberegner
                 //Selvom det samlede beløb overstiger 1200 bliver julegaven ikke beskattet hvis dem koster 900 eller under.
                 if (julegaveVaerdi <= 900)
                 {
-                    beskatning = tingsgaveVaerdi * ((100 - beskatningsgradiProcent) / 100);
+                    beskatning = tingsgaveVaerdi + 1;
                 }
                 else
                 {
-                    beskatning = (tingsgaveVaerdi + julegaveVaerdi) * ((100 - beskatningsgradiProcent) / 100);
+                    beskatning = tingsgaveVaerdi + julegaveVaerdi;
                 }
 
             }
