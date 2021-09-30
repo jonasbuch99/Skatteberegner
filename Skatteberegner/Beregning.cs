@@ -18,7 +18,7 @@ namespace Skatteberegner
                 //Selvom det samlede beløb overstiger 1200 bliver julegaven ikke beskattet hvis dem koster 900 eller under.
                 if (julegaveVaerdi <= 900)
                 {
-                    beskatning = tingsgaveVaerdi + 1;
+                    beskatning = tingsgaveVaerdi;
                 }
                 else
                 {
